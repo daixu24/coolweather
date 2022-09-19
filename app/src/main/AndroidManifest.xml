@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.coolweather">
 
+    <uses-permission android:name="android.permission.INTERNET">
+    </uses-permission>
+
     <application
+        android:usesCleartextTraffic="true"
         android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
